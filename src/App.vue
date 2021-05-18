@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased">
+  <div class="bg-gray-800 h-screen">
     <Search />
   </div>
 </template>

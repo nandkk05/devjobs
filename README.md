@@ -40,9 +40,6 @@ npm run build
 
 ## Show your support
 
-⭐️ this repo if this loved this. For support contact me on [twitter](https://twitter.com/nandkk05)
+⭐️ this repo if this loved this. For support contact on [twitter](https://twitter.com/nandkk05)
 
-##  License
-
-This project is [MIT](https://github.com/goelaakash79/usefonts/blob/master/LICENSE) licensed.
 

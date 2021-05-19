@@ -1,0 +1,102 @@
+[debug] [2021-05-19T06:33:53.527Z] ----------------------------------------------------------------------
+[debug] [2021-05-19T06:33:53.528Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-05-19T06:33:53.529Z] CLI Version:   9.4.0
+[debug] [2021-05-19T06:33:53.529Z] Platform:      darwin
+[debug] [2021-05-19T06:33:53.529Z] Node Version:  v14.15.4
+[debug] [2021-05-19T06:33:53.531Z] Time:          Wed May 19 2021 12:03:53 GMT+0530 (India Standard Time)
+[debug] [2021-05-19T06:33:53.531Z] ----------------------------------------------------------------------
+[debug] [2021-05-19T06:33:53.531Z] 
+[debug] [2021-05-19T06:33:53.538Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-19T06:33:53.538Z] > authorizing via signed-in user
+[debug] [2021-05-19T06:33:53.538Z] [iam] checking project devjobs-github for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-05-19T06:33:53.539Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-19T06:33:53.540Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-19T06:33:58.286Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 19 May 2021 06:33:58 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T06:33:58.316Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/devjobs-github:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-05-19T06:34:00.025Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 19 May 2021 06:34:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1403","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T06:34:00.029Z] > refreshing access token with scopes: []
+[debug] [2021-05-19T06:34:00.029Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-19T06:34:00.250Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 19 May 2021 06:34:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T06:34:00.279Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/devjobs-github [none]
+[debug] [2021-05-19T06:34:00.679Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/devjobs-github 200
+[debug] [2021-05-19T06:34:00.680Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/devjobs-github {"projectId":"devjobs-github","projectNumber":"17791317974","displayName":"devJobs","name":"projects/devjobs-github","resources":{"hostingSite":"devjobs-github"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'devjobs-github'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-05-19T06:34:00.685Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-19T06:34:00.685Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-19T06:34:00.914Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 19 May 2021 06:34:01 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T06:34:00.923Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/devjobs-github/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-05-19T06:34:03.106Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 19 May 2021 06:34:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[devjobs-github]: beginning deploy... 
+[info] i  hosting[devjobs-github]: found 7 files in dist 
+[debug] [2021-05-19T06:34:03.220Z] > refreshing access token with scopes: []
+[debug] [2021-05-19T06:34:03.220Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-19T06:34:03.224Z] [hosting] hash cache [ZGlzdA] stored for 7 files
+[debug] [2021-05-19T06:34:03.224Z] [hosting][hash queue][FINAL] {"max":94,"min":4,"avg":18.714285714285715,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":101}
+[debug] [2021-05-19T06:34:03.449Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 19 May 2021 06:34:03 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T06:34:03.472Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/devjobs-github/versions/2f0fef7eccfa39f5:populateFiles [none]
+[debug] [2021-05-19T06:34:03.472Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/devjobs-github/versions/2f0fef7eccfa39f5:populateFiles {"files":{"/index.html":"517407b05c734f89dca10a15a7ed879dbb627bbf30bd18241ec8aaea327728e0","/favicon.ico":"1e71457865f706dc865b49a54a86e193818220d290b30226b6630a42faf1535d","/css/app.94f53c1c.css":"e7971e95e4647437f9c0e4e0296323c9631ae7f3a0305426ad5a23e487d115d7","/js/app.9fb1efe8.js":"e55f162103ed42d7e754ba967dc372c13c2eb191c7cb66b8982126d5fd5dc5e9","/js/app.9fb1efe8.js.map":"1676a8bd1326875141691ea3b46c3026b8913e724451aabd5e85a233ce5007eb","/js/chunk-vendors.e1b8116d.js":"5f519eea0454ad94cc8ca4876acc6139db629eeb00dd93109a4ebda9800eecd3","/js/chunk-vendors.e1b8116d.js.map":"2215bcc776f3a99410632033124fa477746154f843399e00f6ffd5420b9b31ab"}}
+[debug] [2021-05-19T06:34:13.954Z] [populateQueue] Retrying task index 0
+[debug] [2021-05-19T06:34:13.954Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/devjobs-github/versions/2f0fef7eccfa39f5:populateFiles [none]
+[debug] [2021-05-19T06:34:13.954Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/devjobs-github/versions/2f0fef7eccfa39f5:populateFiles {"files":{"/index.html":"517407b05c734f89dca10a15a7ed879dbb627bbf30bd18241ec8aaea327728e0","/favicon.ico":"1e71457865f706dc865b49a54a86e193818220d290b30226b6630a42faf1535d","/css/app.94f53c1c.css":"e7971e95e4647437f9c0e4e0296323c9631ae7f3a0305426ad5a23e487d115d7","/js/app.9fb1efe8.js":"e55f162103ed42d7e754ba967dc372c13c2eb191c7cb66b8982126d5fd5dc5e9","/js/app.9fb1efe8.js.map":"1676a8bd1326875141691ea3b46c3026b8913e724451aabd5e85a233ce5007eb","/js/chunk-vendors.e1b8116d.js":"5f519eea0454ad94cc8ca4876acc6139db629eeb00dd93109a4ebda9800eecd3","/js/chunk-vendors.e1b8116d.js.map":"2215bcc776f3a99410632033124fa477746154f843399e00f6ffd5420b9b31ab"}}
+[debug] [2021-05-19T06:34:15.747Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/devjobs-github/versions/2f0fef7eccfa39f5:populateFiles 200
+[debug] [2021-05-19T06:34:15.747Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/devjobs-github/versions/2f0fef7eccfa39f5:populateFiles {"uploadRequiredHashes":["e55f162103ed42d7e754ba967dc372c13c2eb191c7cb66b8982126d5fd5dc5e9","1676a8bd1326875141691ea3b46c3026b8913e724451aabd5e85a233ce5007eb","5f519eea0454ad94cc8ca4876acc6139db629eeb00dd93109a4ebda9800eecd3","2215bcc776f3a99410632033124fa477746154f843399e00f6ffd5420b9b31ab","517407b05c734f89dca10a15a7ed879dbb627bbf30bd18241ec8aaea327728e0","e7971e95e4647437f9c0e4e0296323c9631ae7f3a0305426ad5a23e487d115d7"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files"}
+[debug] [2021-05-19T06:34:15.749Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/e55f162103ed42d7e754ba967dc372c13c2eb191c7cb66b8982126d5fd5dc5e9 [none]
+[debug] [2021-05-19T06:34:15.749Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/e55f162103ed42d7e754ba967dc372c13c2eb191c7cb66b8982126d5fd5dc5e9 [stream]
+[debug] [2021-05-19T06:34:15.750Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/1676a8bd1326875141691ea3b46c3026b8913e724451aabd5e85a233ce5007eb [none]
+[debug] [2021-05-19T06:34:15.750Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/1676a8bd1326875141691ea3b46c3026b8913e724451aabd5e85a233ce5007eb [stream]
+[debug] [2021-05-19T06:34:15.750Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/5f519eea0454ad94cc8ca4876acc6139db629eeb00dd93109a4ebda9800eecd3 [none]
+[debug] [2021-05-19T06:34:15.750Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/5f519eea0454ad94cc8ca4876acc6139db629eeb00dd93109a4ebda9800eecd3 [stream]
+[debug] [2021-05-19T06:34:15.751Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/2215bcc776f3a99410632033124fa477746154f843399e00f6ffd5420b9b31ab [none]
+[debug] [2021-05-19T06:34:15.751Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/2215bcc776f3a99410632033124fa477746154f843399e00f6ffd5420b9b31ab [stream]
+[debug] [2021-05-19T06:34:15.751Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/517407b05c734f89dca10a15a7ed879dbb627bbf30bd18241ec8aaea327728e0 [none]
+[debug] [2021-05-19T06:34:15.752Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/517407b05c734f89dca10a15a7ed879dbb627bbf30bd18241ec8aaea327728e0 [stream]
+[debug] [2021-05-19T06:34:15.752Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/e7971e95e4647437f9c0e4e0296323c9631ae7f3a0305426ad5a23e487d115d7 [none]
+[debug] [2021-05-19T06:34:15.752Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/e7971e95e4647437f9c0e4e0296323c9631ae7f3a0305426ad5a23e487d115d7 [stream]
+[debug] [2021-05-19T06:34:15.753Z] [hosting][populate queue][FINAL] {"max":1795,"min":1795,"avg":1795,"active":0,"complete":1,"success":1,"errored":0,"retried":1,"total":1,"elapsed":12533}
+[debug] [2021-05-19T06:34:15.754Z] [hosting] uploads queued: 6
+[debug] [2021-05-19T06:34:17.482Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/1676a8bd1326875141691ea3b46c3026b8913e724451aabd5e85a233ce5007eb 200
+[debug] [2021-05-19T06:34:17.482Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/1676a8bd1326875141691ea3b46c3026b8913e724451aabd5e85a233ce5007eb [stream]
+[debug] [2021-05-19T06:34:17.499Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/e55f162103ed42d7e754ba967dc372c13c2eb191c7cb66b8982126d5fd5dc5e9 200
+[debug] [2021-05-19T06:34:17.499Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/e55f162103ed42d7e754ba967dc372c13c2eb191c7cb66b8982126d5fd5dc5e9 [stream]
+[debug] [2021-05-19T06:34:18.708Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/e7971e95e4647437f9c0e4e0296323c9631ae7f3a0305426ad5a23e487d115d7 200
+[debug] [2021-05-19T06:34:18.708Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/e7971e95e4647437f9c0e4e0296323c9631ae7f3a0305426ad5a23e487d115d7 [stream]
+[debug] [2021-05-19T06:34:18.710Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/517407b05c734f89dca10a15a7ed879dbb627bbf30bd18241ec8aaea327728e0 200
+[debug] [2021-05-19T06:34:18.711Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/517407b05c734f89dca10a15a7ed879dbb627bbf30bd18241ec8aaea327728e0 [stream]
+[debug] [2021-05-19T06:34:18.713Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/5f519eea0454ad94cc8ca4876acc6139db629eeb00dd93109a4ebda9800eecd3 200
+[debug] [2021-05-19T06:34:18.713Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/5f519eea0454ad94cc8ca4876acc6139db629eeb00dd93109a4ebda9800eecd3 [stream]
+[debug] [2021-05-19T06:34:18.714Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/2215bcc776f3a99410632033124fa477746154f843399e00f6ffd5420b9b31ab 200
+[debug] [2021-05-19T06:34:18.715Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/devjobs-github/versions/2f0fef7eccfa39f5/files/2215bcc776f3a99410632033124fa477746154f843399e00f6ffd5420b9b31ab [stream]
+[debug] [2021-05-19T06:34:18.715Z] [hosting][upload queue][FINAL] {"max":2967,"min":1735,"avg":2556.8333333333335,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":2968}
+[info] ✔  hosting[devjobs-github]: file upload complete 
+[debug] [2021-05-19T06:34:18.718Z] [hosting] deploy completed after 15610ms
+[debug] [2021-05-19T06:34:18.974Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "devjobs-github"
+    },
+    "site": "devjobs-github",
+    "version": "sites/devjobs-github/versions/2f0fef7eccfa39f5"
+  }
+]
+[info] i  hosting[devjobs-github]: finalizing version... 
+[debug] [2021-05-19T06:34:18.975Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-19T06:34:18.975Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-19T06:34:19.188Z] <<< HTTP RESPONSE 200 {"date":"Wed, 19 May 2021 06:34:19 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-19T06:34:19.213Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/devjobs-github/versions/2f0fef7eccfa39f5?updateMask=status  
+ {"status":"FINALIZED"}

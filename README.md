@@ -40,6 +40,6 @@ npm run build
 
 ## Show your support
 
-⭐️ this repo if this loved this. For support contact on [twitter](https://twitter.com/nandkk05)
+Star repo if you ❤️ &nbsp;this.  For support contact on [twitter](https://twitter.com/nandkk05)
 
 
